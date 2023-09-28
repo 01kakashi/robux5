@@ -1,22 +1,618 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
-.vscode/
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
-*.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-file
-*.flf
-#Test results file
-TestResults.xml
+<html lang="en"><head>
+    <title>Offers</title>
+    <meta name="referrer" content="no-referrer">
+    <link rel="stylesheet" href="https://d266key948fg17.cloudfront.net/assets/landing_pages/fa/css/font-awesome.min.css">
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">
+        var $GET = {"it":"4143249","key":"0a752","w":0,"h":0,"iframe_mode":1,"m":0,"r":0,"o":0,"s1":0,"s2":0,"s3":0,"s4":0};
+        var userSettings = {"%button_color_1%":"#378bdc","%button_color_2%":"#1c66bd","%main_button_text%":"Verify","%main_button_icon%":"lock","%main_button_font_size%":25,"%input_css%":"html body {\n  margin: 0;\n  padding: 10px;\n  background-color: rgba(0, 0, 0, 0.473);\n  overflow: hidden;\n}\n\n.container {\n  text-align: center;\n  background: url(https:\/\/d266key948fg17.cloudfront.net\/uploads\/1689346336589f66b278d2a637d4fb0dd67c3c83cb.jpg)no-repeat center\/cover;\n  max-width: 400px;\n  height: auto;\n  margin: auto;\n  margin-top: 50px;\n  padding: 20px;\n  border-radius: 25px;\n  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;\n  border: #9ee6fd outset 12px;\n}\n\n.text1 {\n  background: #ffffff86;\n  font-family: 'Tektur', cursive;\n  border-radius: 10px;\n  font-size: 30px;\n  text-align: center;\n  text-transform: uppercase;\n  font-weight: bold;\n  margin-top: -10px;\n  color: #000;\n  padding: 10px;\n}\n\n.text2 {\n  background: #ffffff86;\n  border-radius: 10px;\n  padding: 10px;\n  font-family: 'Roboto', sans-serif;\n  text-align: center;\n  color: #000;\n  font-weight:900;\n  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2), \n               1px 1px 1px rgba(0, 0, 0, 0.6);\n\n}\n.timmer{\n  display: inline-block;\n  text-align: center;\n  background: linear-gradient(45deg, #50bbf3, #9ae6fd);\n  border: none;\n  font-weight: 400;\n  padding: 10px;\n  border-radius: 10px;\n  min-height: 20px;\n  color: #000;\n  transition: all 0.3s;\n  margin-top: 10px;\n  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;\n\n}\n\n.logoimg {\n  width: 40px;\n  margin: auto;\n  padding: 5px;\n  -webkit-animation-name: bounce;\n            -webkit-animation-duration: 0.5s;\n            -webkit-animation-direction: alternate;\n            -webkit-animation-timing-function: cubic-bezier(\n            .5, 0.05, 1, .5);\n            -webkit-animation-iteration-count: infinite;\n        }\n          \n        @-webkit-keyframes bounce {\n            from {\n                -webkit-transform: translate3d(0, 0, 0);\n                transform: translate3d(0, 0, 0);\n            }\n            to {\n                -webkit-transform: translate3d(0, 20px, 0);\n                transform: translate3d(0, 20px, 0);\n            }\n        }\n\n\/* Offers CSS *\/\na.offer-text {}\n\n.gradient {\n  background: linear-gradient(45deg, #50bbf3, #9ae6fd);\n  border: #000 solid 1px;\n  font-weight: 600;\n  padding: 10px;\n  border-radius: 10px;\n  min-height: 40px;\n  color: #000;\n  cursor: pointer;\n  transition: all 0.3s;\n  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;\n\n}\n\n.gradient:hover {\n  background:#fff;\n  color: #000;\n  border: #000 solid 1px;\n  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;\n}\n\n\/* Loading CSS *\/\n.waveform {\n  margin: auto;\n  --uib-size: 20px;\n  --uib-speed: 1s;\n  --uib-color: 58c4f3;\n  --uib-line-weight: 3.5px;\n\n  display: flex;\n  flex-flow: row nowrap;\n  align-items: center;\n  justify-content: space-between;\n  width: var(--uib-size);\n  height: calc(var(--uib-size) * 0.9);\n}\n\n.waveform__bar {\n  width: var(--uib-line-weight);\n  height: 100%;\n  background-color: var(--uib-color);\n}\n\n.waveform__bar:nth-child(1) {\n  animation: grow var(--uib-speed) ease-in-out\n    calc(var(--uib-speed) * -0.45) infinite;\n}\n\n.waveform__bar:nth-child(2) {\n  animation: grow var(--uib-speed) ease-in-out\n    calc(var(--uib-speed) * -0.3) infinite;\n}\n\n.waveform__bar:nth-child(3) {\n  animation: grow var(--uib-speed) ease-in-out\n    calc(var(--uib-speed) * -0.15) infinite;\n}\n\n.waveform__bar:nth-child(4) {\n  animation: grow var(--uib-speed) ease-in-out infinite;\n}\n\n@keyframes grow {\n  0%,\n  100% {\n    transform: scaleY(0.3);\n  }\n\n  50% {\n    transform: scaleY(1);\n  }\n}\n","%html_overall%":"<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<link rel=\"preconnect\" href=\"https:\/\/fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https:\/\/fonts.gstatic.com\" crossorigin>\n<link rel=\"preconnect\" href=\"https:\/\/fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https:\/\/fonts.gstatic.com\" crossorigin>\n<link href=\"https:\/\/fonts.googleapis.com\/css2?family=Lobster&family=Roboto:ital,wght@1,100&display=swap\" rel=\"stylesheet\">\n<link href=\"https:\/\/fonts.googleapis.com\/css2?family=Lobster&display=swap\" rel=\"stylesheet\">\n<link rel=\"preconnect\" href=\"https:\/\/fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https:\/\/fonts.gstatic.com\" crossorigin>\n<link href=\"https:\/\/fonts.googleapis.com\/css2?family=Tektur:wght@800&display=swap\" rel=\"stylesheet\">\n  <link rel=\"stylesheet\" href=\"style.css\">\n  <title>Locker<\/title>\n<\/head>\n<body>\n\n  <div class=\"container\">\n\n\n    \n    <div class=\"text1\">\n      <img src=\"https:\/\/d266key948fg17.cloudfront.net\/uploads\/16893465381f1a03a3666eda469ab4d7adc54ef6e1.png\" class=\"logoimg\">\n      ROBLOX\n      <img src=\"https:\/\/d266key948fg17.cloudfront.net\/uploads\/16893465381f1a03a3666eda469ab4d7adc54ef6e1.png\" class=\"logoimg\">\n    <\/div>\n    <hr>\n    <div class=\"text2\">Complete 'any one' of the activity below to prove that you are not a 'BOT'<\/div>\n    <hr>\n\n    \n\n    <hr>\n\n    <div class=\"waveform\">\n      <div class=\"waveform__bar\"><\/div>\n      <div class=\"waveform__bar\"><\/div>\n      <div class=\"waveform__bar\"><\/div>\n      <div class=\"waveform__bar\"><\/div>\n    <\/div>\n\n  \n<div class=\"timmer\">Time Remaining <span id=\"timer\"><\/span><\/div>\n    \n\n\n    \n\n\n  <\/div>\n  \n<\/body>\n<script>document.getElementById('timer').innerHTML =\n  10 + \":\" + 0;\nstartTimer();\n\nfunction startTimer() {\n  var presentTime = document.getElementById('timer').innerHTML;\n  var timeArray = presentTime.split(\/[:]+\/);\n  var m = timeArray[0];\n  var s = checkSecond((timeArray[1] - 1));\n  if(s==59){m=m-1}\n  \/\/if(m<0){alert('timer completed')}\n  \n  document.getElementById('timer').innerHTML =\n    m + \":\" + s;\n  console.log(m)\n  setTimeout(startTimer, 1000);\n}\n\nfunction checkSecond(sec) {\n  if (sec < 10 && sec >= 0) {sec = \"0\" + sec}; \/\/ add zero in front of numbers < 10\n  if (sec < 0) {sec = \"59\"};\n  return sec;\n}<\/script>\n<\/html>","%html_offer%":"<div class='offer-wrapper'><a class='btn offer-btn offer-text gradient responsive-width strike-tooltip' target='_blank' rel='noreferrer' href='{offer_link}' title='%offer_conversion%'>%offer_anchor%<\/a><\/div>","overlay_color":"#000000","overlay_opacity":"0.4","number_offers":4,"number_offers_required":1,"payout_required":1,"animation":"xf_fadeIn","animation_duration":600,"onClose":"redirect","onCloseURL":"https:\/\/forms.gle\/sEGnmMyjpKPYVmZB6","disable_right_click":0,"escape_key_close":0};
+        var templateSettings = {"%button_color_1%":{"title":"Button Color 1","default":"#378bdc","type":"color","small":"Buttons will use top to bottom gradient."},"%button_color_2%":{"title":"Button Color 2","default":"#1c66bd","type":"color","small":"Buttons will use top to bottom gradient."},"%main_button_text%":{"title":"Main Button Text","default":"Verify","type":"text"},"%main_button_icon%":{"title":"Main Button Icon","default":"lock","type":"icon"},"%main_button_font_size%":{"title":"Main Button Font Size","default":"25","type":"number"},"%input_css%":{"title":"Custom CSS","default":"a.offer-text {\r\n\tfont-size: 16px;\r\n}","type":"html_css","small":"CSS Only. No HTML or JS. Edit with caution.","custom_filter":true},"%html_overall%":{"title":"HTML Template","default":"<div class='center1'><div class='center2'><div class='center3'>\r\n\t<div id='step1-wrapper'>\r\n\t\t<button type='button' class='btn btn-large continue-button gradient responsive-width' id='continue-button'><i class='fa fa-%main_button_icon%'><\/i> Verify<\/button>\r\n\t<\/div>\r\n\t<div id='step2-wrapper' style='display: none;'>\r\n\t\t\r\n\t<\/div>\r\n<\/div><\/div><\/div>","type":"html","small":"Overall HTML Template. Edit with caution.","custom_filter":true},"%html_offer%":{"title":"Offer HTML","default":"<div class='offer-wrapper'><a class='btn offer-btn offer-text gradient responsive-width strike-tooltip' target='_blank' rel='noreferrer' href='{offer_link}' title='%offer_conversion%'>%offer_anchor%<\/a><\/div>","type":"html","small":"Individual Offer HTML. Edit with caution.","custom_filter":true},"overlay_color":{"title":"BG Overlay Color","default":"#000000","type":"color","small":"Background color of overlay (not used in iframe mode)."},"overlay_opacity":{"title":"Overlay Opacity","default":"0.4","type":"text","small":"Overlay Opacity (0 for transparent, 1 for opaque)"},"number_offers":{"title":"Number of Offers","default":4,"type":"number","small":"Max of 5 offers."},"number_offers_required":{"title":"Offers Required","default":1,"type":"number","small":"Offers required for unlock."},"payout_required":{"title":"Payout Required (Cents)","default":1,"type":"number","small":"Payout required (in cents). 500 = $5.00"},"animation":{"title":"Entrance Animation","default":"xf_fadeIn","type":"select","options":{"Drop From Top":"xf_animateTop","Fade In":"xf_fadeIn","Slide From Right":"xf_slideRight","Slide Up":"xf_slideUp","Slide From Right (3D)":"xf_slideFall","Spin In":"xf_spinIn"}},"animation_duration":{"title":"Animation Duration (ms)","default":"600","type":"number","small":"1000ms = 1 second"},"onClose":{"title":"On Offer Complete","default":"redirect","type":"select","options":{"Close Locker":"close_locker","Redirect to URL":"redirect"}},"onCloseURL":{"title":"Redirect URL","default":"https:\/\/google.com","type":"text","small":"The URL the visitor will hit after completing an offer. Only enabled if option above is set to redirect."},"disable_right_click":{"title":"Disable Right Click","default":"0","type":"toggle","small":"Right click will be disabled for the entire page."},"escape_key_close":{"title":"Escape Key Close","default":"0","type":"toggle","small":"If enabled, user can exit content locker with escape key."}};
+        var numOffers = parseInt(userSettings.number_offers);
+    </script>
+    <style type="text/css">
+        #step2-wrapper {
+            display: none;
+        }
+
+        body {
+            font-family: "Open Sans", sans-serif, Arial;
+        }
+
+        a.offer-text {
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        div.offer-wrapper {
+            margin-top: 10px;
+        }
+
+        .responsive-width {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .btn-large {
+            padding: 14px 16px;
+            border-radius: 6px;
+        }
+
+        .btn {
+            box-sizing: border-box;
+            color: white;
+            display: inline-block;
+            padding: 8px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.428571429;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+
+        .gradient {
+            background: #499bea;
+            background: -moz-linear-gradient(top, #499bea 0%, #207ce5 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #499bea), color-stop(100%, #207ce5));
+            background: -webkit-linear-gradient(top, #499bea 0%, #207ce5 100%);
+            background: -o-linear-gradient(top, #499bea 0%, #207ce5 100%);
+            background: -ms-linear-gradient(top, #499bea 0%, #207ce5 100%);
+            background: linear-gradient(to bottom, #499bea 0%, #207ce5 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#499bea', endColorstr='#207ce5', GradientType=0);
+            border: 1px solid #196bba;
+        }
+
+        .gradient:hover {
+            opacity: 0.9;
+        }
+
+        .center1 {
+            display: table;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+        .center2 {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .center3 {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        #_strike-tooltip.active {
+            display: block;
+            z-index: 100;
+            margin-top: -28px;
+            opacity: 1;
+            filter: alpha(opacity=100);
+
+        }
+
+        #_strike-tooltip:before {
+            display: block;
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: inherit;
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            margin-left: -3px;
+            transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+        }
+
+        #_strike-tooltip.down:before {
+            top: -2px;
+        }
+
+        #_strike-tooltip.up:before {
+            bottom: -2px;
+        }
+
+        #_strike-tooltip {
+            font-family: "Open Sans", sans-serif;
+            display: block;
+            background: #232323;
+            color: #fff;
+            position: absolute;
+            padding: 4px 9px;
+            font-size: 12px;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            margin-top: -20px;
+            border-radius: 2px;
+            -moz-border-radius: 2px;
+            cursor: default;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .offerClicked {
+            opacity: 0.7;
+        }
+
+        .btn.continue-button{
+            font-size:25px;
+        }
+        html body {
+  margin: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.473);
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  background: url(https://d266key948fg17.cloudfront.net/uploads/1689346336589f66b278d2a637d4fb0dd67c3c83cb.jpg)no-repeat center/cover;
+  max-width: 400px;
+  height: auto;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border: #9ee6fd outset 12px;
+}
+
+.text1 {
+  background: #ffffff86;
+  font-family: 'Tektur', cursive;
+  border-radius: 10px;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: -10px;
+  color: #000;
+  padding: 10px;
+}
+
+.text2 {
+  background: #ffffff86;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #000;
+  font-weight:900;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2), 
+               1px 1px 1px rgba(0, 0, 0, 0.6);
+
+}
+.timmer{
+  display: inline-block;
+  text-align: center;
+  background: linear-gradient(45deg, #50bbf3, #9ae6fd);
+  border: none;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 10px;
+  min-height: 20px;
+  color: #000;
+  transition: all 0.3s;
+  margin-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.logoimg {
+  width: 40px;
+  margin: auto;
+  padding: 5px;
+  -webkit-animation-name: bounce;
+            -webkit-animation-duration: 0.5s;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-timing-function: cubic-bezier(
+            .5, 0.05, 1, .5);
+            -webkit-animation-iteration-count: infinite;
+        }
+          
+        @-webkit-keyframes bounce {
+            from {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+            to {
+                -webkit-transform: translate3d(0, 20px, 0);
+                transform: translate3d(0, 20px, 0);
+            }
+        }
+
+/* Offers CSS */
+a.offer-text {}
+
+.gradient {
+  background: linear-gradient(45deg, #50bbf3, #9ae6fd);
+  border: #000 solid 1px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  min-height: 40px;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+}
+
+.gradient:hover {
+  background:#fff;
+  color: #000;
+  border: #000 solid 1px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Loading CSS */
+.waveform {
+  margin: auto;
+  --uib-size: 20px;
+  --uib-speed: 1s;
+  --uib-color: 58c4f3;
+  --uib-line-weight: 3.5px;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: var(--uib-size);
+  height: calc(var(--uib-size) * 0.9);
+}
+
+.waveform__bar {
+  width: var(--uib-line-weight);
+  height: 100%;
+  background-color: var(--uib-color);
+}
+
+.waveform__bar:nth-child(1) {
+  animation: grow var(--uib-speed) ease-in-out
+    calc(var(--uib-speed) * -0.45) infinite;
+}
+
+.waveform__bar:nth-child(2) {
+  animation: grow var(--uib-speed) ease-in-out
+    calc(var(--uib-speed) * -0.3) infinite;
+}
+
+.waveform__bar:nth-child(3) {
+  animation: grow var(--uib-speed) ease-in-out
+    calc(var(--uib-speed) * -0.15) infinite;
+}
+
+.waveform__bar:nth-child(4) {
+  animation: grow var(--uib-speed) ease-in-out infinite;
+}
+
+@keyframes grow {
+  0%,
+  100% {
+    transform: scaleY(0.3);
+  }
+
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+    </style>
+    <!-- Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('send', 'pageview');
+
+    </script>
+<script type="text/javascript" src="/public/external/resolution.php?h=768&amp;w=1366" id="undefined"></script><script type="text/javascript" src="/public/external/check.php?time=1695935652686&amp;it=4143249" id="xfLEADCHECK"></script></head>
+<body style="overflow-y:auto;margin: 0;padding:0;" marginwidth="0" marginheight="0"><audio class="audio-for-speech" src=""></audio><div class="translate-tooltip-mtz hidden">
+                    <div class="header">
+                        <div class="header-controls">
+                            <span class="sound-translate"></span>
+                            <span class="settings"></span>
+                        </div>
+                        <div class="translate-icons">
+                            <img class="from" src="">
+                            <img class="arrow" src="chrome-extension://hiidjliailpkjeigakikbfedlfijngih/images/right-arrow.png">
+                            <img class="to" src="">
+                        </div>
+                    </div>
+                    <div class="translated-text">
+                        <div class="words"></div>
+                        <div class="sentences"></div>
+                    </div>
+                    <div class="controls">
+                        <div class="controls__control-wrapper">
+                            <span class="controls__description">
+                                Fast traslate
+                            </span>
+                            <span class="controls__toggle dbl-click active" data-store="double_click">
+                                <div class="controls__inner-circle"></div>
+                            </span>
+                        </div>
+                        <div class="controls__control-wrapper">
+                            <span class="controls__description">
+                                Icon translate
+                            </span>
+                            <span class="controls__toggle icon-trans active" data-store="icon_trans">
+                                <div class="controls__inner-circle"></div>
+                            </span>
+                        </div>
+                    </div>
+                </div><span class="translate-button-mtz hidden"></span>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&amp;family=Roboto:ital,wght@1,100&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&amp;display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Tektur:wght@800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Locker</title>
+
+
+
+  <div class="container">
+
+
+    
+    <div class="text1">
+      <img src="https://d266key948fg17.cloudfront.net/uploads/16893465381f1a03a3666eda469ab4d7adc54ef6e1.png" class="logoimg">
+      ROBLOX
+      <img src="https://d266key948fg17.cloudfront.net/uploads/16893465381f1a03a3666eda469ab4d7adc54ef6e1.png" class="logoimg">
+    </div>
+    <hr>
+    <div class="text2">Complete 'any one' of the activity below to prove that you are not a 'BOT'</div>
+    <hr>
+
+    <div class="offer-wrapper"><a class="btn offer-btn offer-text gradient responsive-width strike-tooltip offerClicked" target="_blank" rel="noreferrer" href="/public/dynamo/lockerClick.php?offer=53385685&amp;offer_position=1&amp;it=4143249&amp;m=0&amp;visitor_id=Vdb6d0bdb61874&amp;hash=22cd578c4a9717f1ad5624e8ab22dfe0" title=""><i class="fa fa-circle-o-notch fa-spin" aria-hidden="true"></i> Waiting for completion</a></div><div class="offer-wrapper"><a class="btn offer-btn offer-text gradient responsive-width strike-tooltip" target="_blank" rel="noreferrer" href="/public/dynamo/lockerClick.php?offer=53383252&amp;offer_position=2&amp;it=4143249&amp;m=0&amp;visitor_id=Vdb6d0bdb61874&amp;hash=8df0eff6e3c866592220051f467534ea" title="Complete the survey">Complete a full survey!</a></div><div class="offer-wrapper"><a class="btn offer-btn offer-text gradient responsive-width strike-tooltip" target="_blank" rel="noreferrer" href="/public/dynamo/lockerClick.php?offer=53374912&amp;offer_position=3&amp;it=4143249&amp;m=0&amp;visitor_id=Vdb6d0bdb61874&amp;hash=98d1c05ac06f0fe308cd0a4c9ae43fb6" title="Complete the survey">Complete this survey to be rewarded!</a></div><div class="offer-wrapper"><a class="btn offer-btn offer-text gradient responsive-width strike-tooltip" target="_blank" rel="noreferrer" href="/public/dynamo/lockerClick.php?offer=53343625&amp;offer_position=4&amp;it=4143249&amp;m=0&amp;visitor_id=Vdb6d0bdb61874&amp;hash=8bce26ab5ed40c471f9574241c8cbdf5" title="Telefon numaranızı girin ve onaylayın">En son oyunları telefonunuza indirin!</a></div>
+
+    <hr>
+
+    <div class="waveform">
+      <div class="waveform__bar"></div>
+      <div class="waveform__bar"></div>
+      <div class="waveform__bar"></div>
+      <div class="waveform__bar"></div>
+    </div>
+
+  
+<div class="timmer">Time Remaining <span id="timer">9:43</span></div>
+    
+
+
+    
+
+
+  </div>
+  
+
+<script>document.getElementById('timer').innerHTML =
+  10 + ":" + 0;
+startTimer();
+
+function startTimer() {
+  var presentTime = document.getElementById('timer').innerHTML;
+  var timeArray = presentTime.split(/[:]+/);
+  var m = timeArray[0];
+  var s = checkSecond((timeArray[1] - 1));
+  if(s==59){m=m-1}
+  //if(m<0){alert('timer completed')}
+  
+  document.getElementById('timer').innerHTML =
+    m + ":" + s;
+  console.log(m)
+  setTimeout(startTimer, 1000);
+}
+
+function checkSecond(sec) {
+  if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
+  if (sec < 0) {sec = "59"};
+  return sec;
+}</script>
+
+<div id="_strike-tooltip"></div>
+<script>
+    //Global Helper Functions
+
+    function getSettingsValueV2(key) {
+        if (typeof userSettings === 'undefined') {
+            console.log("Error - userSettings undefined");
+            return null;
+        }
+        if (typeof userSettings[key] !== "undefined" && userSettings[key]) {
+            return userSettings[key];
+        }
+        if (typeof templateSettings === 'undefined') {
+            console.log("Error - templateSettings undefined");
+            return null;
+        }
+        if (typeof templateSettings[key] === 'undefined') {
+            console.log("Error - key " + key + " in templateSettings undefined");
+            return null;
+        }
+        return templateSettings[key].default;
+    }
+
+    function removeElByID(id) {
+        var elem = document.getElementById(id);
+        if (elem) {
+            elem.parentElement.removeChild(elem);
+        }
+    }
+
+    var $documentHead = document.getElementsByTagName('head')[0];
+
+    function addScriptToHead(url, id) {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = url;
+        script.id = id;
+        $documentHead.appendChild(script);
+    }
+
+    xfCheckForLead();
+
+    function xfCheckForLead() {
+        //xfCheckForLead is called by check.php
+
+        checkLeadScript();
+    }
+
+    function xfOffersComplete(arr) {
+        //xfOffersComplete is called by check.php when leads completed
+        return templateHandleLeadsComplete(arr);
+    }
+
+    function checkLeadScript() {
+        removeElByID("xfLEADCHECK");
+        addScriptToHead(
+            "/public/external/check.php?time=" + new Date().getTime() + "&it=" + $GET.it, "xfLEADCHECK");
+    }
+</script>
+<script type="text/javascript">
+    //Res Logging
+    if ((window.screen.height > 0 && window.screen.width > 0) && ($GET.w == 0 || $GET.h == 0)) {
+        //Resolution needs to be logged properly
+        addScriptToHead('/public/external/resolution.php?h=' + parseInt(window.screen.height) + '&w=' + parseInt(
+            window.screen.width));
+    }
+</script>
+<script>
+    //Right click
+    if(parseInt(getSettingsValueV2('disable_right_click')) === 1){
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    }
+</script>
+<script src="https://d266key948fg17.cloudfront.net/assets/content_lockers/jquery.js"></script>
+<script type="text/javascript">
+    $('#continue-button').click(function () {
+        $('#step1-wrapper').fadeOut(500, function () {
+            $('#step2-wrapper').fadeIn(500);
+        });
+        setTimeout(function () {
+            $('#step1-wrapper').css('display', 'none');
+            $('#step2-wrapper').css('display', 'block');
+        }, 1100)
+    });
+    var $tooltip = jQuery("#_strike-tooltip");
+    jQuery(".strike-tooltip").mouseenter(function () {
+        if (jQuery(this).attr("title")) {
+
+            var offset = jQuery(this).offset();
+            $tooltip.html(jQuery(this).attr("title"));
+            jQuery(this).attr("title", "");
+            $tooltip.addClass("active");
+            var wii = (parseInt(jQuery(this).css("width")) / 2);
+            var wiiii = ((parseInt($tooltip.css("width")) + parseInt($tooltip.css("padding-right")) + parseInt($tooltip.css("padding-left"))) / 2);
+            if ($(this).parent().is(':first-child')) {
+                $tooltip.css("left", offset.left + "px").css("top", offset.top + $(this).parent().height() + 35 + "px").addClass("down").removeClass("up");
+            }
+            else {
+                $tooltip.css("left", offset.left + "px").css("top", offset.top + "px").removeClass("down").addClass("up");
+            }
+
+
+            $tooltip.css("margin-left", ((wiiii - wii) * (-1)) + "px");
+        }
+    }).mouseleave(function () {
+        $tooltip.removeClass("active");
+        jQuery(this).attr("title", $tooltip.html());
+    });
+    $('a.offer-btn').click(function () {
+        $(this).addClass("offerClicked");
+        $(this).html('<i class="fa fa-circle-o-notch fa-spin" aria-hidden="true"></i> Waiting for completion');
+    });
+</script>
+<script type="application/javascript">
+
+    var CPABuildLeads = {};
+    var offersNeeded = parseInt(parseFloat(userSettings.number_offers_required));
+    if (offersNeeded < 1) offersNeeded = 1;
+    var offersCompleted = 0;
+
+    var payoutNeeded = parseInt(parseFloat(userSettings.payout_required));
+    if (payoutNeeded < 1) payoutNeeded = 1;
+    var payoutCompleted = 0;
+
+
+    function templateHandleLeadsComplete(arr) {
+        //This function is usually called by global xfOffersComplete
+
+        $.each(arr, function (index, obj) {
+            CPABuildLeads[obj.lead_id] = obj;
+        });
+        payoutCompleted = 0;
+        offersCompleted = 0;
+        $.each(CPABuildLeads, function (lead_id, obj) {
+            offersCompleted += 1;
+            payoutCompleted += parseInt(obj.points);
+        });
+        if (offersCompleted < offersNeeded) {
+            $.each(CPABuildLeads, function (lead_id, obj) {
+                var els = $('a.offer-btn');
+                els.each(function () {
+                    if ($(this).attr("href").includes("offer=" + obj.offer_id)) {
+                        $(this).text("[OFFER COMPLETED - COMPLETE " + (offersNeeded - offersCompleted) + " MORE OFFER(S)]").off("click").css("color", "green");
+                    }
+                });
+
+            });
+        }
+        else if (payoutCompleted < payoutNeeded) {
+            $.each(CPABuildLeads, function (lead_id, obj) {
+                var els = $('a.offer-btn');
+                els.each(function () {
+                    if ($(this).attr("href").includes("offer=" + obj.offer_id)) {
+                        $(this).text("[OFFER COMPLETED FOR " + (obj.points) + " POINTS - NEED " + (payoutNeeded - payoutCompleted) + " MORE POINT(S)]").off("click").css("color", "green");
+                    }
+                });
+            });
+        }
+        else {
+            //Complete!
+            if (userSettings.onClose == "redirect") {
+                var $a = $("<a>OFFERS COMPLETE! CLICK HERE TO CONTINUE</a>");
+                $a.attr("href", userSettings.onCloseURL);
+                $('body').html("");
+                $a.appendTo($('body'));
+            }
+        }
+
+    }
+</script>
+
+</body></html>
